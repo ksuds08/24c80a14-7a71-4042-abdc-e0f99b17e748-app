@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeCraft AI - Craft Your Future with Intelligent Precision</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-teal-700 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-x7iIaEwOaQnWyv1yYsqIm28U.png?st=2025-07-26T04%3A55%3A27Z&se=2025-07-26T06%3A55%3A27Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-25T08%3A57%3A47Z&ske=2025-07-26T08%3A57%3A47Z&sks=b&skv=2024-08-04&sig=ilLxdbdI6/JnalY96RaVF7DMVNnXMb8gOv1%2Bts4aARg%3D" alt="ResumeCraft AI Logo" class="h-10">
+            <h1 class="text-2xl font-bold">ResumeCraft AI</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section class="bg-white shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-teal-700 mb-4">Craft Your Future with Intelligent Precision</h2>
+            <form id="resume-form" class="space-y-4">
+                <div>
+                    <label for="career-details" class="block text-gray-700">Career Details:</label>
+                    <textarea id="career-details" name="career-details" rows="4" class="w-full border rounded-md p-2"></textarea>
+                </div>
+                <div>
+                    <label for="job-preferences" class="block text-gray-700">Job Preferences:</label>
+                    <input type="text" id="job-preferences" name="job-preferences" class="w-full border rounded-md p-2">
+                </div>
+                <div>
+                    <label for="template-style" class="block text-gray-700">Select a Template Style:</label>
+                    <select id="template-style" name="template-style" class="w-full border rounded-md p-2">
+                        <option value="modern">Modern</option>
+                        <option value="professional">Professional</option>
+                        <option value="creative">Creative</option>
+                    </select>
+                </div>
+                <button type="submit" class="bg-teal-600 text-white py-2 px-4 rounded-md hover:bg-teal-500">Generate Resume</button>
+            </form>
+        </section>
+
+        <section id="resume-preview" class="hidden bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-bold text-teal-700 mb-4">Your Customized Resume</h2>
+            <div id="resume-content" class="text-gray-700">
+                <!-- Resume content will be dynamically injected here -->
+            </div>
+            <button id="download-resume" class="bg-gold-500 text-white py-2 px-4 rounded-md hover:bg-gold-400">Download Resume</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
